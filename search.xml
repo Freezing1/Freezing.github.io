@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo博客添加豆瓣书单电影游戏页面</title>
+      <link href="/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/"/>
+      <url>/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo博客添加豆瓣书单电影游戏页面"><a href="#Hexo博客添加豆瓣书单电影游戏页面" class="headerlink" title="Hexo博客添加豆瓣书单电影游戏页面"></a>Hexo博客添加豆瓣书单电影游戏页面</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-douban --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>将下面的配置写入站点的配置文件 <code>_config.yml</code> 里(不是主题的配置文件).</p><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">douban</span><span class="token punctuation">:</span>  <span class="token key atrule">user</span><span class="token punctuation">:</span> mythsman  <span class="token key atrule">builtin</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>  <span class="token key atrule">book</span><span class="token punctuation">:</span>    <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'This is my book title'</span>    <span class="token key atrule">quote</span><span class="token punctuation">:</span> <span class="token string">'This is my book quote'</span>  <span class="token key atrule">movie</span><span class="token punctuation">:</span>    <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'This is my movie title'</span>    <span class="token key atrule">quote</span><span class="token punctuation">:</span> <span class="token string">'This is my movie quote'</span>  <span class="token key atrule">game</span><span class="token punctuation">:</span>    <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'This is my game title'</span>    <span class="token key atrule">quote</span><span class="token punctuation">:</span> <span class="token string">'This is my game quote'</span>  <span class="token key atrule">timeout</span><span class="token punctuation">:</span> <span class="token number">10000 </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li><strong>user</strong>: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 “个人主页” ，这时候地址栏的URL大概是这样：”<a href="https://www.douban.com/people/xxxxxx/&quot;" target="_blank" rel="noopener">https://www.douban.com/people/xxxxxx/"</a> ，其中的”xxxxxx”就是你的个人ID了。</li><li><strong>builtin</strong>: 是否将生成页面的功能嵌入<code>hexo s</code>和<code>hexo g</code>中，默认是<code>false</code>。</li><li><strong>title</strong>: 该页面的标题.</li><li><strong>quote</strong>: 写在页面开头的一段话,支持html语法.</li><li><strong>timeout</strong>: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。</li></ul><p>如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>使用<code>hexo douban</code>命令即可生成指定页面，如果不加参数，那么默认参数为<code>-bgm</code>。</p><p><strong>需要注意的是</strong>，通常大家都喜欢用<code>hexo d</code>来作为<code>hexo deploy</code>命令的简化，但是当安装了<code>hexo douban</code>之后，就不能用<code>hexo d</code>了，因为<code>hexo douban</code>跟<code>hexo deploy</code>的前缀都是<code>hexo d</code>。</p><pre><code>$ hexo douban -hUsage: hexo doubanDescription:Generate pages from doubanOptions:  -b, --books   Generate douban books only  -g, --games   Generate douban games only  -m, --movies  Generate douban movies only</code></pre><p>如果配置了<code>builtin</code>参数为<code>true</code>，那么除了可以使用<code>hexo douban</code>命令之外，<code>hexo g</code>或<code>hexo s</code>也内嵌了生成页面的功能。</p><h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><p>如果上面的配置和操作都没问题，就可以在生成站点之后打开 <code>//yourblog/books</code> 和 <code>//yourblog/movies</code>, <code>//yourblog/games</code>, 来查看结果.</p><h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><p>如果上面的显示没有问题就可以在主题的配置文件 <code>_config.yml</code> 里添加如下配置来为这些页面添加菜单链接.</p><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>  <span class="token key atrule">Home</span><span class="token punctuation">:</span> /  <span class="token key atrule">Archives</span><span class="token punctuation">:</span> /archives  <span class="token key atrule">Books</span><span class="token punctuation">:</span> /books     <span class="token comment" spellcheck="true">#This is your books page</span>  <span class="token key atrule">Movies</span><span class="token punctuation">:</span> /movies   <span class="token comment" spellcheck="true">#This is your movies page</span>  <span class="token key atrule">Games</span><span class="token punctuation">:</span> /games   <span class="token comment" spellcheck="true">#This is your games page</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="适配Matery主题"><a href="#适配Matery主题" class="headerlink" title="适配Matery主题"></a>适配Matery主题</h2><p>1.在 /themes/hexo-theme-matery/layout 文件夹下面创建一个名为 douban.ejs 的文件，并将下面的内容复制进去：</p><pre class="line-numbers language-html"><code class="language-html">/* banner 部分 */<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">    <span class="token selector"><span class="token class">.about-cover</span> </span><span class="token punctuation">{</span>        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">75</span>vh<span class="token punctuation">;</span>    <span class="token punctuation">}</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>&lt;%- partial('_partial/bg-cover') %>/* 内容 */<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>contact<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container chip-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span> <span class="token number">10</span>px <span class="token number">0</span>px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>&lt;%= page.title %><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%-</span> <span class="token attr-name">page.content</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>2.然后在博客站点目录下的node_modules文件夹下找到hexo-douban/lib，文件夹下有三个js文件，分别为：books-generator.js 、games-generator.js 、movies-generator.js，用文本编辑器打开这三个文件，并将其文件内容末尾的代码修改为一下内容：</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/* 原文件内容为 layout: [`page`, `post`] ，将其修改为下面的内容*/</span> layout<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token template-string"><span class="token string">`page`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token string">`douban`</span></span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>3.最后使用<code>hexo-douban</code>命令生成页面</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客记录</title>
+      <link href="/2019/12/27/blog-mark/"/>
+      <url>/2019/12/27/blog-mark/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>作为一名前端开发人员，早就有了自己建博客的想法，奈何技术时间有限，一直没动手，最近比较空闲，发现用博客框架搭建起来比较简单，于是研究了各种博客方案，最后准备在Wordpress和Hexo之间选一个，WordPress搭建一个博客也不难，但是要有自己的服务器，还得跑一个 MySQL，还得跑PHP……<br>去Hexo官网看了一下文档，发现简单多了，非常适合新手，最主要的几点：</p><ul><li>部署的是静态页面，不需要自己的服务器，用 github page 就能搞定</li><li>支持 Markdown 文件，直接写成md文件，再生成页面就行了</li><li>主题很多，大佬写的主题美观又耐用</li><li>命令简单，几个命令就能搭建起来，弄到 github 上也不复杂  </li></ul><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>参观了很多大佬的博客，最终选择<a href="https://blinkfox.github.io/" target="_blank" rel="noopener">闪烁之狐</a>大佬的<a href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>主题，在此基础上也参考了<a href="https://sunhwee.com/" target="_blank" rel="noopener">洪卫の博客</a>的博客，博文里面有详细的主题讲解。</p><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul><li>简单漂亮，文章内容美观易读</li><li><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</li><li>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</li><li>首页轮播文章及每天动态切换 <code>Banner</code> 图片</li><li>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</li><li>时间轴式的归档页</li><li><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</li><li>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</li><li>可自定义的数据的友情链接页面</li><li>支持文章置顶和文章打赏</li><li>支持 <code>MathJax</code></li><li><code>TOC</code> 目录</li><li>可设置复制文章内容时追加版权信息</li><li>可设置阅读文章时做密码验证</li><li><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</li><li>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</li><li>支持在首页的音乐播放和视频播放功能</li></ul><h2 id="修改记录"><a href="#修改记录" class="headerlink" title="修改记录"></a>修改记录</h2><ul><li>修改主题颜色，解决移动端部分样式错乱问题    2019.12.23</li><li>解决首页点击开始阅读，跳转位置偏差问题      2019.12.24</li><li>合并标签和分类页  2019.12.27</li><li>加入豆瓣电影游戏页面 2019.12.29</li><li>我的简历模块加入开关  2019.12.30</li><li>持续更新…</li></ul><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World!</title>
+      <link href="/2019/12/23/hello-world/"/>
+      <url>/2019/12/23/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h1 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h1><hr><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><pre class="line-numbers language-bash"><code class="language-bash">hexo new post <span class="token string">"article title"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="部署到远程"><a href="#部署到远程" class="headerlink" title="部署到远程"></a>部署到远程</h2><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
