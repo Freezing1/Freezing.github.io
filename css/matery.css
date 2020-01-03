@@ -1853,6 +1853,11 @@ footer .copy-right {
         margin-right: 15px;
     }
 }
+@media screen and (max-width:600px){
+    .recommend .post-card .read-more{
+        margin: 2rem 1px;
+    }
+}
 
 @media screen and (max-width: 367px) {
     .info-break-policy {
