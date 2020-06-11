@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fuliangliang.cn/2020/06/11/centeros7-an-zhuang-pei-zhi-nginx/</loc>
-    <lastmod>2020-06-11</lastmod>
-  </url>  <url>
     <loc>https://fuliangliang.cn/2019/12/27/blog-mark/</loc>
     <lastmod>2020-06-11</lastmod>
   </url>  <url>
-    <loc>https://fuliangliang.cn/2020/05/11/ubuntu-zi-ding-yi-python-huan-jing/</loc>
+    <loc>https://fuliangliang.cn/2020/06/03/teng-xun-yun-pei-zhi-https/</loc>
+    <lastmod>2020-06-11</lastmod>
+  </url>  <url>
+    <loc>https://fuliangliang.cn/2020/06/11/centeros7-an-zhuang-pei-zhi-nginx/</loc>
     <lastmod>2020-06-11</lastmod>
   </url>  <url>
     <loc>https://fuliangliang.cn/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/</loc>
+    <lastmod>2020-06-11</lastmod>
+  </url>  <url>
+    <loc>https://fuliangliang.cn/2019/12/23/hello-world/</loc>
+    <lastmod>2020-06-11</lastmod>
+  </url>  <url>
+    <loc>https://fuliangliang.cn/2020/05/11/ubuntu-zi-ding-yi-python-huan-jing/</loc>
     <lastmod>2020-06-11</lastmod>
   </url>  <url>
     <loc>https://fuliangliang.cn/2020/03/22/scroll-offset-he-client-de-qu-bie/</loc>
@@ -21,8 +27,5 @@
   </url>  <url>
     <loc>https://fuliangliang.cn/2020/01/03/vue-ji-suan-shu-xing-computed-vs-fang-fa-methods/</loc>
     <lastmod>2020-01-03</lastmod>
-  </url>  <url>
-    <loc>https://fuliangliang.cn/2019/12/23/hello-world/</loc>
-    <lastmod>2020-01-02</lastmod>
   </url>
 </urlset>
