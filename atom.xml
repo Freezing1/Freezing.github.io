@@ -5,9 +5,9 @@
   <subtitle>似水流年</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/Freezing1/Freezing1.github.io/"/>
-  <updated>2020-01-02T03:00:45.347Z</updated>
-  <id>https://github.com/Freezing1/Freezing1.github.io/</id>
+  <link href="https://fuliangliang.cn/"/>
+  <updated>2020-06-11T02:27:32.276Z</updated>
+  <id>https://fuliangliang.cn/</id>
   
   <author>
     <name>亮亮</name>
@@ -17,11 +17,150 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>centerOS7安装配置nginx</title>
+    <link href="https://fuliangliang.cn/2020/06/11/centeros7-an-zhuang-pei-zhi-nginx/"/>
+    <id>https://fuliangliang.cn/2020/06/11/centeros7-an-zhuang-pei-zhi-nginx/</id>
+    <published>2020-06-11T02:23:27.000Z</published>
+    <updated>2020-06-11T02:27:32.276Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;1.安装配置所需环境&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;yum &lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+      <category term="运维" scheme="https://fuliangliang.cn/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+      <category term="后端" scheme="https://fuliangliang.cn/categories/%E8%BF%90%E7%BB%B4/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Nginx" scheme="https://fuliangliang.cn/tags/Nginx/"/>
+    
+      <category term="Linux" scheme="https://fuliangliang.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu自定义Python环境</title>
+    <link href="https://fuliangliang.cn/2020/05/11/ubuntu-zi-ding-yi-python-huan-jing/"/>
+    <id>https://fuliangliang.cn/2020/05/11/ubuntu-zi-ding-yi-python-huan-jing/</id>
+    <published>2020-05-11T06:59:50.000Z</published>
+    <updated>2020-06-11T01:57:49.579Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;Ubuntu系统自带Python环境，但是默认版本是2.x,不满足开发需要，那么就需要自定义开发环境&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;1-首先最好更新一下Ubuntu下载源，要不然一些包可能下载不到，踩坑点&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://fuliangliang.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Python" scheme="https://fuliangliang.cn/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scroll、offset和client的区别</title>
+    <link href="https://fuliangliang.cn/2020/03/22/scroll-offset-he-client-de-qu-bie/"/>
+    <id>https://fuliangliang.cn/2020/03/22/scroll-offset-he-client-de-qu-bie/</id>
+    <published>2020-03-22T06:58:18.000Z</published>
+    <updated>2020-06-10T07:05:44.290Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;scroll、offset和client的区别&quot;&gt;&lt;a href=&quot;#scroll、offset和client的区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://fuliangliang.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JS" scheme="https://fuliangliang.cn/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS防抖和节流</title>
+    <link href="https://fuliangliang.cn/2020/02/10/js-fang-dou-he-jie-liu/"/>
+    <id>https://fuliangliang.cn/2020/02/10/js-fang-dou-he-jie-liu/</id>
+    <published>2020-02-10T06:56:53.000Z</published>
+    <updated>2020-06-10T07:05:38.443Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;函数防抖-debounce&quot;&gt;&lt;a href=&quot;#函数防抖-debounce&quot; class=&quot;headerlink&quot; title=&quot;函数防抖(debounce)&quot;&gt;&lt;/a&gt;&lt;font
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://fuliangliang.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JS" scheme="https://fuliangliang.cn/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue计算属性(computed) vs 方法 (methods)</title>
+    <link href="https://fuliangliang.cn/2020/01/03/vue-ji-suan-shu-xing-computed-vs-fang-fa-methods/"/>
+    <id>https://fuliangliang.cn/2020/01/03/vue-ji-suan-shu-xing-computed-vs-fang-fa-methods/</id>
+    <published>2020-01-03T08:30:39.000Z</published>
+    <updated>2020-01-03T08:34:43.527Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Vue计算属性-computed-vs-方法-methods&quot;&gt;&lt;a href=&quot;#Vue计算属性-computed-vs-方法-methods&quot; class=&quot;headerlink&quot; title=&quot;Vue计算属性(computed) vs
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://fuliangliang.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JS" scheme="https://fuliangliang.cn/tags/JS/"/>
+    
+      <category term="Vue" scheme="https://fuliangliang.cn/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客添加豆瓣书单电影游戏页面</title>
-    <link href="https://github.com/Freezing1/Freezing1.github.io/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/"/>
-    <id>https://github.com/Freezing1/Freezing1.github.io/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/</id>
+    <link href="https://fuliangliang.cn/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/"/>
+    <id>https://fuliangliang.cn/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/</id>
     <published>2019-12-31T10:38:14.000Z</published>
-    <updated>2020-01-02T03:00:45.347Z</updated>
+    <updated>2020-06-11T01:55:01.905Z</updated>
     
     <summary type="html">
     
@@ -35,21 +174,21 @@
     
     </summary>
     
-      <category term="软件安装与配置" scheme="https://github.com/Freezing1/Freezing1.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+      <category term="软件安装与配置" scheme="https://fuliangliang.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Hexo" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://fuliangliang.cn/tags/Hexo/"/>
     
-      <category term="博客" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://fuliangliang.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>博客记录</title>
-    <link href="https://github.com/Freezing1/Freezing1.github.io/2019/12/27/blog-mark/"/>
-    <id>https://github.com/Freezing1/Freezing1.github.io/2019/12/27/blog-mark/</id>
+    <link href="https://fuliangliang.cn/2019/12/27/blog-mark/"/>
+    <id>https://fuliangliang.cn/2019/12/27/blog-mark/</id>
     <published>2019-12-27T01:26:45.614Z</published>
-    <updated>2020-01-02T02:27:40.816Z</updated>
+    <updated>2020-06-11T02:22:15.478Z</updated>
     
     <summary type="html">
     
@@ -63,21 +202,21 @@
     
     </summary>
     
-      <category term="软件安装与配置" scheme="https://github.com/Freezing1/Freezing1.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+      <category term="软件安装与配置" scheme="https://fuliangliang.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Hexo" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://fuliangliang.cn/tags/Hexo/"/>
     
-      <category term="博客" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://fuliangliang.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="Github" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/Github/"/>
+      <category term="Github" scheme="https://fuliangliang.cn/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Hello World!</title>
-    <link href="https://github.com/Freezing1/Freezing1.github.io/2019/12/23/hello-world/"/>
-    <id>https://github.com/Freezing1/Freezing1.github.io/2019/12/23/hello-world/</id>
+    <link href="https://fuliangliang.cn/2019/12/23/hello-world/"/>
+    <id>https://fuliangliang.cn/2019/12/23/hello-world/</id>
     <published>2019-12-23T09:13:51.000Z</published>
     <updated>2020-01-02T02:56:00.228Z</updated>
     
@@ -94,12 +233,12 @@
     
     </summary>
     
-      <category term="软件安装与配置" scheme="https://github.com/Freezing1/Freezing1.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+      <category term="软件安装与配置" scheme="https://fuliangliang.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Hexo" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://fuliangliang.cn/tags/Hexo/"/>
     
-      <category term="博客" scheme="https://github.com/Freezing1/Freezing1.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://fuliangliang.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
