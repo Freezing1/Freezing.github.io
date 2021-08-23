@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>博客记录</title>
+      <link href="/2020/06/22/blog-mark/"/>
+      <url>/2020/06/22/blog-mark/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>作为一名前端开发人员，早就有了自己建博客的想法，奈何技术时间有限，一直没动手，最近比较空闲，发现用博客框架搭建起来比较简单，于是研究了各种博客方案，最后准备在Wordpress和Hexo之间选一个，WordPress搭建一个博客也不难，但是要有自己的服务器，还得跑一个 MySQL，还得跑PHP……<br>去Hexo官网看了一下文档，发现简单多了，非常适合新手，最主要的几点：</p><ul><li>部署的是静态页面，不需要自己的服务器，用 github page 就能搞定</li><li>支持 Markdown 文件，直接写成md文件，再生成页面就行了</li><li>主题很多，大佬写的主题美观又耐用</li><li>命令简单，几个命令就能搭建起来，弄到 github 上也不复杂  </li></ul><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>参观了很多大佬的博客，最终选择<a href="https://blinkfox.github.io/" target="_blank" rel="noopener">闪烁之狐</a>大佬的<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题，在此基础上也参考了<a href="https://sunhwee.com/" target="_blank" rel="noopener">洪卫の博客</a>的博客，博文里面有详细的主题讲解。</p><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul><li>简单漂亮，文章内容美观易读</li><li><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</li><li>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</li><li>首页轮播文章及每天动态切换 <code>Banner</code> 图片</li><li>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</li><li>时间轴式的归档页</li><li><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</li><li>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</li><li>可自定义的数据的友情链接页面</li><li>支持文章置顶和文章打赏</li><li>支持 <code>MathJax</code></li><li><code>TOC</code> 目录</li><li>可设置复制文章内容时追加版权信息</li><li>可设置阅读文章时做密码验证</li><li><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</li><li>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</li><li>支持在首页的音乐播放和视频播放功能</li></ul><h2 id="修改记录"><a href="#修改记录" class="headerlink" title="修改记录"></a>修改记录</h2><ul><li>修改主题颜色，解决移动端部分样式错乱问题    2019.12.23</li><li>解决首页点击开始阅读，跳转位置偏差问题      2019.12.24</li><li>合并标签和分类页  2019.12.27</li><li>加入豆瓣电影游戏页面 2019.12.29</li><li>我的简历模块加入开关  2019.12.30</li><li>主题图片压缩 2020.5.13</li><li>采用七牛云+PicGo建立图床  20205.14</li><li>持续更新…</li></ul><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>centerOS7安装配置nginx</title>
       <link href="/2020/06/11/centeros7-an-zhuang-pei-zhi-nginx/"/>
       <url>/2020/06/11/centeros7-an-zhuang-pei-zhi-nginx/</url>
@@ -181,35 +210,6 @@
             <tag> Hexo </tag>
             
             <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客记录</title>
-      <link href="/2019/12/27/blog-mark/"/>
-      <url>/2019/12/27/blog-mark/</url>
-      
-        <content type="html"><![CDATA[<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>作为一名前端开发人员，早就有了自己建博客的想法，奈何技术时间有限，一直没动手，最近比较空闲，发现用博客框架搭建起来比较简单，于是研究了各种博客方案，最后准备在Wordpress和Hexo之间选一个，WordPress搭建一个博客也不难，但是要有自己的服务器，还得跑一个 MySQL，还得跑PHP……<br>去Hexo官网看了一下文档，发现简单多了，非常适合新手，最主要的几点：</p><ul><li>部署的是静态页面，不需要自己的服务器，用 github page 就能搞定</li><li>支持 Markdown 文件，直接写成md文件，再生成页面就行了</li><li>主题很多，大佬写的主题美观又耐用</li><li>命令简单，几个命令就能搭建起来，弄到 github 上也不复杂  </li></ul><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>参观了很多大佬的博客，最终选择<a href="https://blinkfox.github.io/" target="_blank" rel="noopener">闪烁之狐</a>大佬的<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题，在此基础上也参考了<a href="https://sunhwee.com/" target="_blank" rel="noopener">洪卫の博客</a>的博客，博文里面有详细的主题讲解。</p><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul><li>简单漂亮，文章内容美观易读</li><li><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</li><li>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</li><li>首页轮播文章及每天动态切换 <code>Banner</code> 图片</li><li>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</li><li>时间轴式的归档页</li><li><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</li><li>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</li><li>可自定义的数据的友情链接页面</li><li>支持文章置顶和文章打赏</li><li>支持 <code>MathJax</code></li><li><code>TOC</code> 目录</li><li>可设置复制文章内容时追加版权信息</li><li>可设置阅读文章时做密码验证</li><li><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</li><li>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</li><li>支持在首页的音乐播放和视频播放功能</li></ul><h2 id="修改记录"><a href="#修改记录" class="headerlink" title="修改记录"></a>修改记录</h2><ul><li>修改主题颜色，解决移动端部分样式错乱问题    2019.12.23</li><li>解决首页点击开始阅读，跳转位置偏差问题      2019.12.24</li><li>合并标签和分类页  2019.12.27</li><li>加入豆瓣电影游戏页面 2019.12.29</li><li>我的简历模块加入开关  2019.12.30</li><li>主题图片压缩 2020.5.13</li><li>采用七牛云+PicGo建立图床  20205.14</li><li>持续更新…</li></ul><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件安装与配置 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 博客 </tag>
-            
-            <tag> Github </tag>
             
         </tags>
       

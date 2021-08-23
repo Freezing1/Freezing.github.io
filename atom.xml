@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fuliangliang.cn/"/>
-  <updated>2020-06-11T06:33:47.623Z</updated>
+  <updated>2021-08-23T05:40:31.255Z</updated>
   <id>https://fuliangliang.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客记录</title>
+    <link href="https://fuliangliang.cn/2020/06/22/blog-mark/"/>
+    <id>https://fuliangliang.cn/2020/06/22/blog-mark/</id>
+    <published>2020-06-22T15:10:44.995Z</published>
+    <updated>2021-08-23T05:40:31.255Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;简短介绍&quot;&gt;&lt;a href=&quot;#简短介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件安装与配置" scheme="https://fuliangliang.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Hexo" scheme="https://fuliangliang.cn/tags/Hexo/"/>
+    
+      <category term="博客" scheme="https://fuliangliang.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Github" scheme="https://fuliangliang.cn/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>centerOS7安装配置nginx</title>
@@ -52,7 +82,7 @@
     <link href="https://fuliangliang.cn/2020/06/03/teng-xun-yun-pei-zhi-https/"/>
     <id>https://fuliangliang.cn/2020/06/03/teng-xun-yun-pei-zhi-https/</id>
     <published>2020-06-03T06:30:41.000Z</published>
-    <updated>2020-06-11T06:38:53.266Z</updated>
+    <updated>2021-08-23T05:40:31.271Z</updated>
     
     <summary type="html">
     
@@ -188,7 +218,7 @@
     <link href="https://fuliangliang.cn/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/"/>
     <id>https://fuliangliang.cn/2019/12/31/hexo-bo-ke-tian-jia-dou-ban-shu-dan-dian-ying-you-xi-ye-mian/</id>
     <published>2019-12-31T10:38:14.000Z</published>
-    <updated>2020-06-11T06:21:40.379Z</updated>
+    <updated>2021-08-23T05:40:31.264Z</updated>
     
     <summary type="html">
     
@@ -208,36 +238,6 @@
       <category term="Hexo" scheme="https://fuliangliang.cn/tags/Hexo/"/>
     
       <category term="博客" scheme="https://fuliangliang.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客记录</title>
-    <link href="https://fuliangliang.cn/2019/12/27/blog-mark/"/>
-    <id>https://fuliangliang.cn/2019/12/27/blog-mark/</id>
-    <published>2019-12-27T01:26:45.614Z</published>
-    <updated>2020-06-11T06:40:39.821Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;简短介绍&quot;&gt;&lt;a href=&quot;#简短介绍&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="软件安装与配置" scheme="https://fuliangliang.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    
-    
-      <category term="Hexo" scheme="https://fuliangliang.cn/tags/Hexo/"/>
-    
-      <category term="博客" scheme="https://fuliangliang.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="Github" scheme="https://fuliangliang.cn/tags/Github/"/>
     
   </entry>
   
